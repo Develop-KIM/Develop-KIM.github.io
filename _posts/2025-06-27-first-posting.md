@@ -1,6 +1,6 @@
 ---
-layout: posts
-title:  "첫번째 포스팅"
+layout: single
+title: "첫번째 포스팅"
 ---
 안녕하세요.
 
