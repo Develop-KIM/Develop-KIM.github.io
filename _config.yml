@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Develop-KIM"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : # "실패는 로그에 남고, 성장은 블로그에 남는다."
+  bio              : ""
   location         : "South Korea"
   # email            : "kimdonghwan913@gmail.com"
   links:
