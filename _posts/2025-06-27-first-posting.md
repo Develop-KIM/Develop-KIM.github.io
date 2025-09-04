@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "첫번째 포스팅"
+categories: [coding, 개발]
+tag: [pythone, coding, 개발]
 ---
 안녕하세요.
 
