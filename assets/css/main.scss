@@ -1,11 +1,9 @@
---- # Only the main Sass file needs front matter (the dashes are enough) search: false --- @charset "utf-8";
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
 
-// 스킨 파일은 Jekyll (Liquid) 변수를 사용하므로, @import를 그대로 유지합니다.
-// Jekyll이 먼저 이 부분을 처리하고, 그 후에 Sass 컴파일러가 이 파일을 Sass로 인식하게 됩니다.
+@charset "utf-8";
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-
-// 'minimal-mistakes' 테마의 핵심 Sass 파일들을 모듈로 불러옵니다.
-// 이 부분은 @import 대신 @use로 변경합니다.
-// 'as *'는 모듈 내의 모든 변수, 믹스인 등을 별칭 없이 바로 사용할 수 있게 합니다.
-// 'minimal-mistakes' 테마의 경우, _minimal-mistakes.scss 파일이 다른 모든 부분을 @forward 하고 있기 때문에 이렇게 한 번만 불러와도 충분합니다.
-@use "minimal-mistakes" as *;
+@import "minimal-mistakes"; // main partials
